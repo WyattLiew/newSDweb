@@ -10,11 +10,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/swiper.css">
 
 </head>
 <body>
@@ -24,7 +21,7 @@
 			<a href="index.html"><img src="assets/logo/SDLOGO.png"></a>
 		</div>
 		<ul class="nav-links">
-			<li class="nav-links-item">
+			<li class="nav-links-item nav-item-active">
 				<a href="aboutus.html">About Us</a>
 			</li>
 			<li class="nav-links-item">
@@ -79,14 +76,64 @@
 	</nav>
 </div>
 
-<div class="main-container">
-<div>
-	<img src="assets/images/h1.jpg" style="width: 100%; padding-bottom: 50px;">
+<div class="aboutus__container pg-top pg-btm">
+	<div class="aboutus__header">
+		<h2>About us</h2>
+	</div>
+    <div class="aboutus__img">
+      <div><img src="assets/images/h1.jpg"></div>
+    </div>
+
+  <div class="aboutus-container__inner">
+		<div class="aboutus-container__row">
+			<div class="aboutus-container__col aboutus__flt-text">
+				<h2>OUR PHILOSOPHY</h2>
+				<p>Step Dezign is a multidisciplinary firm, focused on interior design, lighting design and planning.</p>
+				<p>We are a team of professional, energetic individual’s with talented designers and experienced managers available to guide our client’s through the flawless and timely execution of any residential design project.</p>
+				<p>We manipulate forms and combinations from our everyday world to create an aesthetic, practical, and sustainable atmosphere that transforms a simple building or space into a place of happiness for you and your guests.</p>
+			</div>
+			<div class="aboutus-container__col">
+				<h2>OUR STORY</h2>
+				<p>Step Dezign PTE LTD was established in 2019 after assembling works over the years with designers and commercial builders in Singapore. We are here to provide our expertise to those who are in need of design sense.</p>
+				<p>Design consult is the basis of what we do, with flexibility to move beyond.</p>
+				<p>We believe a successful interior combines both form and function and is in alignment with the client’s aesthetic, lifestyle and budget. It is therefore important each of our designers has the right kind of experience.</p>
+			</div>
+		</div>
+	</div>
 </div>
+
+<div class="aboutus__container teams-bg teams-mg-btm">
+	<div class="teams__header">
+		<h2>Our team</h2>
+	</div>
+	<div class="aboutus-container__inner">
+	<div class="aboutus-container__row">
+			<div class="teams-container__col teams-container">
+				<img src="assets/images/h1.jpg">
+				<p>NAME</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet expedita voluptate repudiandae dolorem blanditiis, non recusandae itaque asperiores aliquid, totam libero fugit commodi fuga, quis culpa explicabo assumenda cum ipsa!</p>
+			</div>
+			<div class="teams-container__col teams-container">
+				<img src="assets/images/h1.jpg">
+				<p>NAME</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet expedita voluptate repudiandae dolorem blanditiis, non recusandae itaque asperiores aliquid, totam libero fugit commodi fuga, quis culpa explicabo assumenda cum ipsa!</p>
+			</div>
+			<div class="teams-container__col teams-container">
+				<img src="assets/images/h1.jpg">
+				<p>NAME</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet expedita voluptate repudiandae dolorem blanditiis, non recusandae itaque asperiores aliquid, totam libero fugit commodi fuga, quis culpa explicabo assumenda cum ipsa!</p>
+			</div>
+			<div class="teams-container__col teams-container">
+				<img src="assets/images/h1.jpg">
+				<p>NAME</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet expedita voluptate repudiandae dolorem blanditiis, non recusandae itaque asperiores aliquid, totam libero fugit commodi fuga, quis culpa explicabo assumenda cum ipsa!</p>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!-- The Modal -->
-<div id="freeQuoteModal" class="modal" data-backdrop="static" data-keyboard="false">
+<div id="freeQuoteModal" class="modal hide" data-backdrop="static" data-keyboard="false">
 
   <!-- Modal content -->
   <div class="modal-content" >
@@ -135,11 +182,13 @@
   </div>
 </div>
 
+
+
 <footer>
 	<hr>
 	<div class="footer__inner">
 	<div class="footer__header footer-float-left">
-		<h2 id="freeQuote">GET FREE QUOTES!</h2>
+		<h2>GET FREE QUOTES!</h2>
 	</div>
 	<div class="footer__header footer-float-right">
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
@@ -153,27 +202,7 @@
 	<hr>
 </footer>
 
-
-
-  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script type="text/javascript" src="js/modal.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-<!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+
 </body>
 </html>

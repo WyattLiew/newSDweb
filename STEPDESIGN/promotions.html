@@ -10,7 +10,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+		  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
@@ -33,7 +33,7 @@
 			<li class="nav-links-item">
 				<a href="#">Projects</a>
 			</li>
-			<li class="nav-links-item">
+			<li class="nav-links-item nav-item-active">
 				<a href="promotions.html">Promotions</a>
 			</li>
 			<li class="nav-links-item">
@@ -49,7 +49,7 @@
 				<a href="contacts.html">Contact us</a>
 			</li>
 			<li class="nav-links-item nav-links-item-bg">
-				<a href="#" id="freeQuote" class="nav-item-text">Free Quote</a>
+				<a href="#" class="nav-item-text">Free Quote</a>
 			</li>
 			<ul class="nav-socials">
 			<li>
@@ -79,67 +79,38 @@
 	</nav>
 </div>
 
-<div class="main-container">
-<div>
-	<img src="assets/images/h1.jpg" style="width: 100%; padding-bottom: 50px;">
-</div>
-</div>
-
-<!-- The Modal -->
-<div id="freeQuoteModal" class="modal" data-backdrop="static" data-keyboard="false">
-
-  <!-- Modal content -->
-  <div class="modal-content" >
-    <div class="quote__header">
-		<h2>Get free quote</h2>
+<div class="aboutus__container pg-top pg-btm">
+	<div class="aboutus__header">
+		<h2>Promotions</h2>
 	</div>
-	<span class="close">&times;</span>
-    <form action="" method="POST" class="quote-bg">
-			<div class="contacts-container__row">
-				<div class="quote-form__col">
-			<label for="propertyType">Property type</label>
-			<select name="propertyType" id="propertyType">
-			  <option value="volvo">HDB</option>
-			</select>
-		</div>
-		<div class="quote-form__col">
-			<label for="propertyStatus">Property status</label>
-			<select name="propertyStatus" id="propertyStatus">
-			  <option value="volvo">New</option>
-			</select>
-		</div>
-		<div class="quote-form__col">
-				<label for="idStyle">Interior style</label>
-			<select name="idStyle" id="idStyle">
-			  <option value="volvo">Mordern</option>
-			</select>
-		</div>
-		</div>
-		<div class="contacts-container__row">
-			<div class="quote-form-ct__col quote-txt_box">
-				<div class="txt_box ">
-				 	<input type="text" name="name" placeholder="Name" required>
-				</div>
-			</div>
-			<div class="quote-form-ct__col">
-			<div class="txt_box">
-				 	<input type="tel" name="phonenumber" placeholder="Phone number" required>
-				</div>
-			</div>
-		</div>
-		<div class="quote-form-btn">
-		 		<input type="submit" value="Send">
-		 	</div>
-			
-		</form>
+    <div class="aboutus__img">
+      <div><img src="assets/images/h1.jpg"></div>
+    </div>
+</div>
+
+<!-- Swiper -->
+<div class="promotions__inner">
+  <div class="swiper-container swiper-container-promotions">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><img src="assets/images/h1.jpg"></div></div>
+      <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><img src="assets/images/h1.jpg"></div></div>
+      <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><img src="assets/images/h1.jpg"></div></div>
+      <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><img src="assets/images/h1.jpg"></div></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+     <div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
   </div>
 </div>
+
+
 
 <footer>
 	<hr>
 	<div class="footer__inner">
 	<div class="footer__header footer-float-left">
-		<h2 id="freeQuote">GET FREE QUOTES!</h2>
+		<h2>GET FREE QUOTES!</h2>
 	</div>
 	<div class="footer__header footer-float-right">
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
@@ -153,18 +124,15 @@
 	<hr>
 </footer>
 
-
-
   <script src="https://unpkg.com/swiper/js/swiper.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script type="text/javascript" src="js/modal.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-<!-- Initialize Swiper -->
+ <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
+      spaceBetween: 10,
+      // init: false,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -173,7 +141,22 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }
     });
   </script>
+
 </body>
 </html>
