@@ -73,9 +73,11 @@
 	</nav>
 </div>
 
+<div class="side-bg">
 <div class="aboutus__container pg-top pg-btm">
 	<div class="aboutus__header">
-		<h2>Contact us!</h2>
+		<h2>FREE QUOTE</h2>
+		<p>Drop us a line or give us a ring. We love to hear about your experience. We are happy to answer any questions.</p>
 	</div>
 	 <div class="aboutus-container__inner">
 		<div class="contacts-container__row">
@@ -106,8 +108,8 @@
 			</div>
 			<div class="contacts-container__row">
 				<div class="social-media-contact-list">
-				<i class="fas fa-mobile-alt black"></i>
-					<h2>+65 6351 1101</h2>
+				<i class="fab fa-whatsapp-square black"></i>
+					<h2>+65 9172 7980</h2>
 				</div>
 			</div>
 
@@ -127,46 +129,107 @@
 			</div>
 
 			<div class="contacts-container__col">
-		<form action="" method="POST">
+		<form action="FromToEmail.php" method="POST">
 		<div class="contact-form">
 			<h1>Make an appointment</h1>
-			<div class="contacts-container__row">
-				<div class="contacts-form__col">
-			<label for="propertyType">Property type</label>
-			<select name="propertyType" id="propertyType">
-			  <option value="volvo">HDB</option>
-			</select>
+			<label  for="keyPeriod">Property type</label>
+			<div class="contacts-form-icon__row">
+			<div class="contacts-form-icon__col">
+			<label>
+				<input type="radio" name="propertyType" value="hdb" checked>
+				 <img src="assets/webicon/hdb.png">
+			</label>
+			<p>HDB</p>
 		</div>
-		<div class="contacts-form__col">
+		<div class="contacts-form-icon__col">
+			<label>
+				<input type="radio" name="propertyType" value="condo" >
+				 <img src="assets/webicon/condo.png">
+			</label>
+			<p>CONDO</p>
+		</div>
+		<div class="contacts-form-icon__col">
+			<label>
+				<input type="radio" name="propertyType" value="landed">
+				 <img src="assets/webicon/landed.png">
+			</label>
+			<p>LANDED</p>
+		</div>
+		<div class="contacts-form-icon__col">
+			<label>
+				<input type="radio" name="propertyType" value="commercial">
+				 <img src="assets/webicon/commercial.png">
+			</label>
+			<p>COMMERCIAL</p>
+		</div>
+	</div>
+			<div class="contacts-details__row">
+		<div class="contacts-form-ct__col">
 			<label for="propertyStatus">Property status</label>
 			<select name="propertyStatus" id="propertyStatus">
-			  <option value="volvo">New</option>
+			  <option value="new">New</option>
+			  <option value="resales">Resales</option>
 			</select>
 		</div>
-		<div class="contacts-form__col">
+		<div class="contacts-form-ct__col">
 				<label for="idStyle">Interior style</label>
 			<select name="idStyle" id="idStyle">
-			  <option value="volvo">Mordern</option>
+			  <option value="mordern">Mordern</option>
+			  <option value="No preference">No Preference</option>
 			</select>
 		</div>
 		</div>
-		<div class="contacts-container__row">
+		<div class="contacts-details__row">
 			<div class="contacts-form-ct__col">
 				<div class="txt_box">
 				<label for="budget">Budget</label>
-				 	<input type="number" name="budget" min="10000" max="1000000" step = "10000" placeholder="30000" >
+				 	<input type="number" name="budget" min="10000" max="1000000" step = "10000" placeholder="30000" required>
 				</div>
 			</div>
 			<div class="contacts-form-ct__col">
 			<div class="txt_box">
 				<label for="size">Size</label>
-				 	<input type="text" name="size" placeholder="181 M&sup2;">
+				 	<input type="text" name="size" placeholder="181 M&sup2;" required>
 				</div>
 			</div>
-
 		</div>
 
-			<div class="contacts-container__row">
+		<div class="projects-form__row">
+				<div class="contacts-form-ct__col">
+			<label for="loanRequired">Loan Required</label>
+			<select name="loanRequired" id="loanRequired">
+			  <option value="yes">Yes</option>
+			  <option value="no">No</option>
+			</select>
+		</div>
+		<div class="contacts-form-ct__col">
+			<label for="keyCollected">Key Collected</label>
+			<select name="keyCollected" id="keyCollected">
+			   <option value="yes">Yes</option>
+			  <option value="no">No</option>
+			</select>
+		</div>
+		</div>
+
+		<div class="projects-form__row">
+			<label for="keyPeriod">Estimated Key Collection Period</label>
+				<div class="contacts-form-ct__col">
+			<select name="keyPeriodMonth" id="keyPeriod">
+			  <option value="janMar">Jan - Mar</option>
+			  <option value="aprJun">Apr - Jun</option>
+			   <option value="julSep">Jul - Sep</option>
+			  <option value="octDec">Oct - Dec</option>
+			</select>
+		</div>
+			<div class="contacts-form-ct__col">
+			<select name="keyPeriodYear" id="keyPeriod">
+			   <option value="2020">2020</option>
+			  <option value="2021">2021</option>
+			</select>
+		</div>
+		</div>
+
+			<div class="contacts-details__row">
 				<div class="contacts-form__col">
 			<div class="txt_box">
 				<!-- <label>Full Name :</label> -->
@@ -188,12 +251,12 @@
 		</div>
 				<div class="txt_box">
 				<!-- <label>Message :</label> -->
-				 <textarea maxlength="150" name="message" id="message" placeholder="Enter your message" required></textarea>
+				 <textarea maxlength="150" name="message" id="message" placeholder="Enter your message"></textarea>
 				</div>
 		 		<input type="submit" value="Send" class="contact-form-btn">
 			</div>
 		</form>
-		<p>We will be contact you as soon as possible!.</p>
+		<p class="text-pg-top">We will be contact you as soon as possible!.</p>
 		<p>Thank you for your interest in STEP DEZIGN PTE LTD.</p>
 	</div>
 			
@@ -201,7 +264,7 @@
 			</div>
 			
 		</div>
-
+</div>
 
 
 

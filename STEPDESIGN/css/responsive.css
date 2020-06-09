@@ -108,8 +108,8 @@
 }
 
 	.contacts-form-ct__col {
-	flex: 100%;
-	max-width: 100%;
+	flex: 100% !important;
+	max-width: 100% !important;
 }
 
 	.quote-form__col {
@@ -135,11 +135,29 @@
 	flex: 100%;
 	max-width: 100% !important;
 }
+
+.projects-details__col {
+	flex: 50%;
+	max-width: 50%;
+}
+
+.projects-details__row {
+	width: 100%;
+}
+
+.contacts-form-icon__col {
+    flex: 50%;
+    max-width: 50%;
+}
   }
 
   @media screen and (max-width: 768px) {
   	.teams-container__col {
 	flex: 100%;
+	max-width: 50%;
+}
+.projects-details__col {
+	flex: 50%;
 	max-width: 50%;
 }
   }
@@ -300,6 +318,15 @@
 .social-media-contact-list {
     flex-direction: column;
 }
+.contacts-container__row h2 {
+	padding: 20px 0;
+}
+
+.contacts-container__row {
+	align-items: none;
+	flex-wrap: nowrap;
+}
+
 }
 @media screen and (max-width: 1024px) {
 .contacts-form__col input {
@@ -308,7 +335,7 @@
 }
 @media screen and (max-width: 1024px) {
 .contacts-container__row {
-
+		align-items: inherit;
 		flex-direction: column;
 	}
 
@@ -324,8 +351,8 @@
 }
 
 	.contacts-form-ct__col {
-	flex: 100%;
-	max-width: 100%;
+	flex: 50%;
+	max-width: 50%;
 }
 
 .projects-list__col {
