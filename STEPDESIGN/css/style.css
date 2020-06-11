@@ -160,6 +160,10 @@ nav{
 	padding-top: 25vh;
 }
 
+.pg-top-icon {
+	padding-top: 20px !important;
+}
+
 .pg-btm {
  padding-bottom: 50px;
 }
@@ -702,7 +706,7 @@ nav{
 
 .contacts-container__row h2 {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.1em;
     color: #1c1b1d;
     padding: 20px;
@@ -731,10 +735,10 @@ nav{
 	width: 100%;
 	box-sizing: border-box;
     margin: 10px 0;
-    border: 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
     background: white;
     padding: 10px 10px;
-    outline: solid;
     color: #1c1b1d;
 }
 
@@ -755,26 +759,24 @@ nav{
 .contacts-form__col input
 	{
 	text-align: center;
-
+	border-radius: 3px;
 	box-sizing: border-box;
     margin: 10px 0;
-    border: 0;
+    border: 1px solid #ccc;
     background: white;
     padding: 10px 10px;
-    outline: solid;
     color: #1c1b1d;
 }
 
 	.contacts-form-ct__col input{
 	text-align: center;
 	width: 50%;
-
+	border-radius: 3px;
 	box-sizing: border-box;
     margin: 10px 0;
-    border: 0;
+    border: 1px solid #ccc;
     background: white;
     padding: 10px 10px;
-    outline: solid;
     color: #1c1b1d;
 }
 
@@ -783,10 +785,10 @@ nav{
     width: 100%;
     box-sizing: border-box;
     margin: 10px 0;
-    border: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
     background: white;
     padding: 10px 10px;
-    outline: solid;
     color: #1c1b1d;
     resize: none;
     height: 120px;
@@ -805,6 +807,10 @@ width: 100%;
 .contact-form-btn:hover{
 			background: #2980b9;
 		}
+
+#iskeyCollected {
+	display: none;
+}
 
 /* contacts icon*/
 .contacts-form-icon__row {
@@ -1352,6 +1358,12 @@ footer {
   padding: 20px;
   width: 90%;
 }
+.modal-content-promotions {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+}
 
 /* The Close Button */
 .close{
@@ -1362,7 +1374,8 @@ footer {
   font-weight: bold;
 }
 
-.pj-close {
+.pj-close,
+.promotion-close {
   color: #1c1b1d;
   float: right;
   padding: 10px;
@@ -1375,13 +1388,56 @@ footer {
 .close:hover,
 .close:focus,
 .pj-close:hover,
-.pj-close:focus {
+.pj-close:focus,
+.promotion-close:hover,
+.promotion-close:focus {
   color: grey;
   text-decoration: none;
   cursor: pointer;
 }
 
+/*promotions modal */
+.promotion-modal__header {
+	position: relative;
+	padding: 30px;
+}
 
+.promotion-modal__header h2 {
+	font-size: 32px;
+	text-align: center;
+	color: #1c1b1d;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.promotion-modal__body {
+	text-align: center;
+}
+.promotion-modal__body img {
+	width: 50%;
+}
+
+.promotion__timer h1 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 1em;
+}
+
+.promotion__timer li {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 400;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.promotion__timer li span {
+  display: block;
+  font-weight: 400;
+  font-size: 26px;
+}
 /* quuote */
 
 .quote-bg {

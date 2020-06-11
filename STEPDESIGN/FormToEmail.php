@@ -4,7 +4,7 @@
 
 
 
-$my_email = "stepdbsg@gmail.com";
+$my_email = "";
 
 
 
@@ -12,7 +12,7 @@ $my_email = "stepdbsg@gmail.com";
 
 
 
-$continue = "/";
+$continue = "/contacts.html";
 
 
 
@@ -69,18 +69,18 @@ $phonenumber = $_POST['phonenumber'];
 $email_from = 'stepdbsg@gmail.com';
 $email_subject = "New Form submission from STEP DEZIGN website";
 $email_body = "You have received a new message from the client $name.\n".
-                            "Here is the message:\n $message".
+                            "Here is the message:\n $message.\n".
                             "Information below:\n".
-                            "Email address: $visitor_email.\n"
-                            "phonenumber: $phonenumber.\n"
-                            "property type: $propertyType.\n"
-                            "property status: $propertyStatus.\n"
-                            "property style: $idStyle.\n"
-                            "budget S$: $budget.\n"
-                            "size: $size.\n"
-                            "loan required: $loanRequired.\n"
-                            "key collected: $keyCollected.\n"
-                            "keyPeriodMonth: $keyPeriodMonth.\n"
+                            "Email address: $visitor_email.\n".
+                            "phonenumber: $phonenumber.\n".
+                            "property type: $propertyType.\n".
+                            "property status: $propertyStatus.\n".
+                            "property style: $idStyle.\n".
+                            "budget S$: $budget.\n".
+                            "size: $size.\n".
+                            "loan required: $loanRequired.\n".
+                            "key collected: $keyCollected.\n".
+                            "keyPeriodMonth: $keyPeriodMonth.\n".
                             "keyPeriodYear: $keyPeriodYear.\n";
 
 $headers = "From: $email_from \r\n";
