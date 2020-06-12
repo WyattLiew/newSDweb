@@ -2,19 +2,19 @@
 var modal = document.getElementById("freeQuoteModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("freeQuote");
+// var btn = document.getElementById("freeQuote");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  modal.style.display = "block";
-    nav.classList.toggle('nav-active');
-  burger.classList.toggle('toggle');  
-}
+// btn.onclick = function() {
+//   const burger = document.querySelector('.burger');
+//   const nav = document.querySelector('.nav-links');
+//   modal.style.display = "block";
+//     nav.classList.toggle('nav-active');
+//   burger.classList.toggle('toggle');  
+// }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
