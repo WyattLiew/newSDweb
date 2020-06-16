@@ -33,6 +33,7 @@
 }
 }
 
+
 @media screen and (max-width: 600px) {
   .swiper-container {
   	width: 100%;
@@ -40,6 +41,7 @@
 
   .swiper-container-main {
       width: 100% !important;
+      height: 100% !important;
     }
 
   .btn-seeMore a {
@@ -52,7 +54,19 @@
   .container-header {
      left: 0%; 
 }
+
+.mainPage-sideLine {
+	width: 75% !important;
+}
   }
+
+    @media screen and (max-width: 768px) {
+
+ 
+.mainPage-sideLine {
+	width: 87%;
+}
+}
 
   @media screen and (max-width: 960px) {
 
@@ -137,8 +151,8 @@
 }
 
 .projects-details__col {
-	flex: 50%;
-	max-width: 50%;
+	flex: 100% !important;
+	max-width: 100% !important;
 }
 
 .projects-details__row {
@@ -160,7 +174,14 @@
 	flex: 50%;
 	max-width: 50%;
 }
+
+.pj-close {
+	font-size: 30px;
+	bottom: 55px;
+	right: 30px;
+	padding: 0;
   }
+}
 
 @media screen and (max-width: 960px) {
 
@@ -276,6 +297,23 @@
 		padding:10px 0 0 0 ;
 		width: 100%;
 	}
+
+	.projects-details__borderRight {
+    border-right: none;
+}
+
+.pg-top {
+	padding-top: 20vh !important;
+}
+
+.pg-top-pj {
+	padding-top: 25vh !important;
+}
+
+.projects-details__container,
+.main-container {
+	padding-top: 25vh !important;
+}
 }
 
 /* projects */
@@ -311,6 +349,14 @@
 	padding: 0;
 	width: 100%;
 }
+
+.projects__img .projects__middle-text {
+	display: block;
+}
+
+.projects-details__row {
+	width: 100%;
+}
 }
 
 /* contacts */
@@ -331,6 +377,28 @@
 @media screen and (max-width: 1024px) {
 .contacts-form__col input {
     width: 100%;
+}
+
+.quote-form-main__col {
+	flex: 100%;
+	max-width: 100%;
+}
+
+.quote-form-main__col input{
+	width: 100%;
+}
+
+.pg-top {
+	padding-top: 13vh;
+}
+
+.pg-top-pj {
+	padding-top: 15vh;
+}
+
+.projects-details__container,
+.main-container {
+	padding-top: 15vh;
 }
 }
 @media screen and (max-width: 1024px) {
@@ -374,7 +442,8 @@
 }
 	}
 @media screen and (max-width: 1024px) {
-.quote-txt_box{
+.quote-txt_box,
+.quote-txt_box-right{
 	text-align: center;
 }
 
@@ -432,4 +501,18 @@
   	font-size: 15px;
   	letter-spacing: 0;
   }
+}
+
+
+/* footer */
+@media screen and (max-width: 768px) {
+	.footer-float-right,
+	.footer-float-left {
+		float: none;
+	}
+
+	.footer-socials {
+		text-align: left;
+		padding-top: 50px;
+	}
 }

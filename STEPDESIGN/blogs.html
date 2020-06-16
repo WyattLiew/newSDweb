@@ -16,39 +16,52 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.css">
 
+	<script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  <script defer src="js/swup.js"></script>  
+
 </head>
 <body>
 	<div class="main-nav" id="navbar">
 	<nav>
 		<div class="logo">
-			<a href="index.html"><img src="assets/logo/SDLOGO.png"></a>
+			<a href="../index.html"><img src="assets/logo/SDLOGO.png"></a>
 		</div>
 		<ul class="nav-links">
 			<li class="nav-links-item">
-				<a href="aboutus.html">About Us</a>
+				<div class="nav-links-sideIcon">
+					<i class="fas fa-square-full nav-icon-size"></i>
+				<div class="nav-links-sideLine"></div>
+			</div>
 			</li>
 			<li class="nav-links-item">
-				<a href="services.html">Services</a>
+				<a href="../aboutus.html">About Us</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="projects.html">Projects</a>
+				<a href="../services.html">Services</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="promotions.html">Promotions</a>
+				<a href="../projects.html">Projects</a>
+			</li>
+			<li class="nav-links-item">
+				<a href="../promotions.html">Promotions</a>
 			</li>
 			<li class="nav-links-item nav-item-active">
-				<a href="blogs.html">Blog</a>
+				<a href="../blogs.html">Blog</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="testimonials.html">Testimonials</a>
+				<a href="../testimonials.html">Testimonials</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="career.html">Career</a>
+				<a href="../career.html">Career</a>
 			</li>
 			<li class="nav-links-item nav-links-item-bg">
-				<a href="contacts.html" class="nav-item-text">Free Quote</a>
+				<a href="../contacts.html" class="nav-item-text">Free Quote</a>
 			</li>
 			<ul class="nav-socials">
+				<li>
+					<div class="nav-socials-sideIcon">
+					<i class="fas fa-square-full nav-icon-size"></i>
+				<div class="nav-socials-sideLine"></div>
+				</li>
 			<li>
 				<a href="#">
 				<i class="fab fa-instagram-square instagram nav-icon-size"></i></a>
@@ -76,9 +89,10 @@
 	</nav>
 </div>
 
+<main id="swup" class="transition-fade">
 <div class="aboutus__container pg-top pg-btm">
 	<div class="aboutus__header">
-		<h2>Blogs</h2>
+		<h2><i class="fas fa-square-full title-icon-size"></i> Blogs <i class="fas fa-square-full title-icon-size"></i></h2>
 	</div>
     <div class="aboutus__img">
       <div><img src="assets/images/h1.jpg"></div>
@@ -89,12 +103,13 @@
     	<button onclick="myFunction()" id="myBtn">Read more</button>
     </div>
 </div>
+</main>
 
 <!-- Swiper -->
 <div class="promotions__inner">
   <div class="swiper-container swiper-container-promotions">
     <div class="swiper-wrapper">
-      <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><img src="assets/images/h1.jpg"></div></div>
+      <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><a href="/blogs/blog1.html"><img src="assets/images/h1.jpg"></a></div></div>
       <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><img src="assets/images/h1.jpg"></div></div>
       <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><img src="assets/images/h1.jpg"></div></div>
       <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><img src="assets/images/h1.jpg"></div></div>
@@ -106,7 +121,17 @@
   </div>
 </div>
 
+<!-- chat -->
+<div class="chat" id="chatmenu">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
+	<img src="assets/webicon/chat.png" class="chatImg">
+</div>
 
+<div class="chatWhatsapp" id="chat__Whatsapp">
+	<a href="https://wa.me/6591727980"><i class="fab fa-whatsapp-square whatsapp"></i></a>
+</div>
 
 <footer>
 	<hr>
@@ -118,8 +143,25 @@
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
 	</div>
 	<div class="footer__body">
-		<ul>
-			<li><p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p></li>
+		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p>
+		<ul class="footer-socials">
+			<li>
+				<a href="#">
+				<i class="fab fa-instagram-square instagram nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+				<i class="fab fa-facebook-square facebook nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+				<i class="fab fa-pinterest-square pinterest nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-envelope-square envelope nav-icon-size"></i>
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -159,6 +201,7 @@
       }
     });
   </script>
+ 
 
 </body>
 </html>

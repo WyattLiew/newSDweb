@@ -39,3 +39,18 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+var chatMenu = document.getElementById("chatmenu");
+var chatWhatsapp = document.getElementById("chat__Whatsapp");
+
+
+function clickMenu() {
+  chatMenu.classList.toggle('toggleChat');
+  chatMenu.classList.toggle('toggleImg');
+  chatWhatsapp.classList.toggle('toggleWhatsapp');
+
+}
+
+chatMenu.addEventListener('click', function(e){
+      clickMenu();
+    });

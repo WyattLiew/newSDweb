@@ -22,6 +22,12 @@
 		</div>
 		<ul class="nav-links">
 			<li class="nav-links-item">
+				<div class="nav-links-sideIcon">
+					<i class="fas fa-square-full nav-icon-size"></i>
+				<div class="nav-links-sideLine"></div>
+			</div>
+			</li>
+			<li class="nav-links-item">
 				<a href="aboutus.html">About Us</a>
 			</li>
 			<li class="nav-links-item">
@@ -46,6 +52,11 @@
 				<a href="contacts.html" class="nav-item-text">Free Quote</a>
 			</li>
 			<ul class="nav-socials">
+				<li>
+					<div class="nav-socials-sideIcon">
+					<i class="fas fa-square-full nav-icon-size"></i>
+				<div class="nav-socials-sideLine"></div>
+				</li>
 			<li>
 				<a href="#">
 				<i class="fab fa-instagram-square instagram nav-icon-size"></i></a>
@@ -76,14 +87,14 @@
 
 <div class="aboutus__container pg-top pg-btm">
 	<div class="aboutus__header">
-		<h2>FREE QUOTE</h2>
+		<h2><i class="fas fa-square-full title-icon-size"></i> FREE QUOTE <i class="fas fa-square-full title-icon-size"></i></h2>
 		<p>Drop us a line or give us a ring. We love to hear about your experience. We are happy to answer any questions.</p>
 	</div>
 	 <div class="aboutus-container__inner">
 		<div class="contacts-container__row">
 			<div class="contacts-container__col">
 			<div class="social-media-contact-list">
-				<i class="fas fa-map-marked-alt nav-social-icon" style="color: green;"></i>
+				<i class="fas fa-map-marked-alt nav-social-icon" style="color: #02457A;"></i>
 					<h2>
 						2 Yishun Industrial Street 1
 						#07-27 Northpoint Bizhub
@@ -93,7 +104,7 @@
 
 				<div class="contacts-container__row">
 				<div class="social-media-contact-list">
-				<i class="fas fa-clock nav-social-icon" style="color: cornflowerblue;"></i>
+				<i class="fas fa-clock nav-social-icon" style="color:  #02457A;"></i>
 					<h2>Weekdays: 9AM - 6PM <br>
 					Sunday: Closed
 				</h2>
@@ -134,33 +145,40 @@
 			<h1>Make an appointment</h1>
 			<label  for="keyPeriod">Property type</label>
 			<div class="contacts-form-icon__row">
-			<div class="contacts-form-icon__col">
+			<div class="contacts-form-icon__col contact-align">
 			<label>
 				<input type="radio" name="propertyType" value="hdb" checked>
-				 <img src="assets/webicon/hdb.png">
-			</label>
+				 <img src="assets/webicon/hdb.png" id="hdb">
+				 <img src="assets/webicon/hdb1.png" id="hdb1">
+
 			<p>HDB</p>
+			</label>
 		</div>
-		<div class="contacts-form-icon__col">
+		<div class="contacts-form-icon__col contact-align">
 			<label>
 				<input type="radio" name="propertyType" value="condo" >
-				 <img src="assets/webicon/condo.png">
-			</label>
+				 <img src="assets/webicon/condo.png" id="condo">
+				 <img src="assets/webicon/condo1.png" id="condo1">
 			<p>CONDO</p>
+			</label>
 		</div>
-		<div class="contacts-form-icon__col">
+		<div class="contacts-form-icon__col contact-align">
 			<label>
 				<input type="radio" name="propertyType" value="landed">
-				 <img src="assets/webicon/landed.png">
+				 <img src="assets/webicon/landed.png" id="landed">
+				  <img src="assets/webicon/landed1.png" id="landed1">
+				  <p>LANDED</p>
 			</label>
-			<p>LANDED</p>
+			
 		</div>
-		<div class="contacts-form-icon__col pg-top-icon">
+		<div class="contacts-form-icon__col pg-top-icon contact-align">
 			<label>
 				<input type="radio" name="propertyType" value="commercial">
-				 <img src="assets/webicon/commercial.png">
+				 <img src="assets/webicon/commercial.png" id="commercial">
+				 <img src="assets/webicon/commercial1.png" id="commercial1">
+				 <p>COMMERCIAL</p>
 			</label>
-			<p>COMMERCIAL</p>
+			
 		</div>
 	</div>
 			<div class="contacts-details__row">
@@ -182,13 +200,17 @@
 		<div class="contacts-details__row">
 			<div class="contacts-form-ct__col">
 				<div class="txt_box">
-				<label for="budget">Budget</label>
-				 	<input type="number" name="budget" min="1" max="1000000" step = "1" placeholder="30000" required>
+				<label for="budget">Budget (S$)</label>
+				 	<select name="budget" id="budget" required>
+					  <option value="10000-30000">10000 - 30000</option>
+					  <option value="30001-50000">30001 - 50000</option>
+					  <option value="above 50000">More than 50000</option>
+					</select>
 				</div>
 			</div>
 			<div class="contacts-form-ct__col">
 			<div class="txt_box">
-				<label for="size">Size</label>
+				<label for="size">Size M&sup2;</label>
 				 	<input type="text" name="size" placeholder="181 M&sup2;" required>
 				</div>
 			</div>
@@ -258,7 +280,7 @@
 		 		<input type="submit" value="Send" class="contact-form-btn">
 			</div>
 		</form>
-		<p class="text-pg-top">We will be contact you as soon as possible!.</p>
+		<p class="text-pg-top">We will be contact you as soon as possible!</p>
 		<p>Thank you for your interest in STEP DEZIGN PTE LTD.</p>
 	</div>
 			
@@ -279,7 +301,7 @@
 	<span class="promotion-close">&times;</span>
 	<div class="promotion-modal__body">
     <img src="assets/images/h1.jpg">
-	<div class="promotion__timer">
+	<div class="promotion__timer" id="promotion__timer">
   		<h1>Dont's miss out</h1>
   <ul>
     <li><span id="days"></span>days</li>
@@ -292,6 +314,18 @@
   </div>
 </div>
 
+<!-- chat -->
+<div class="chat" id="chatmenu">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
+	<img src="assets/webicon/chat.png" class="chatImg">
+</div>
+
+<div class="chatWhatsapp" id="chat__Whatsapp">
+	<a href="https://wa.me/6591727980"><i class="fab fa-whatsapp-square whatsapp"></i></a>
+</div>
+
 <footer>
 	<hr>
 	<div class="footer__inner">
@@ -302,8 +336,25 @@
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
 	</div>
 	<div class="footer__body">
-		<ul>
-			<li><p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p></li>
+		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p>
+		<ul class="footer-socials">
+			<li>
+				<a href="#">
+				<i class="fab fa-instagram-square instagram nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+				<i class="fab fa-facebook-square facebook nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+				<i class="fab fa-pinterest-square pinterest nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-envelope-square envelope nav-icon-size"></i>
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -356,10 +407,10 @@ var x = setInterval(function() {
   document.getElementById('hours').innerText = hours,
   document.getElementById('minutes').innerText = minutes,
   document.getElementById('seconds').innerText = seconds;
-    
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
+    clearTimeout(x);
     document.getElementById("promotion__timer").innerHTML = "EXPIRED";
   }
 }, 1000);

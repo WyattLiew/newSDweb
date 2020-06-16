@@ -28,6 +28,12 @@
 		</div>
 		<ul class="nav-links">
 			<li class="nav-links-item">
+				<div class="nav-links-sideIcon">
+					<i class="fas fa-square-full nav-icon-size"></i>
+				<div class="nav-links-sideLine"></div>
+			</div>
+			</li>
+			<li class="nav-links-item">
 				<a href="../aboutus.html">About Us</a>
 			</li>
 			<li class="nav-links-item">
@@ -52,6 +58,11 @@
 				<a href="../contacts.html" class="nav-item-text">Free Quote</a>
 			</li>
 			<ul class="nav-socials">
+				<li>
+					<div class="nav-socials-sideIcon">
+					<i class="fas fa-square-full nav-icon-size"></i>
+				<div class="nav-socials-sideLine"></div>
+				</li>
 			<li>
 				<a href="#">
 				<i class="fab fa-instagram-square instagram nav-icon-size"></i></a>
@@ -81,7 +92,7 @@
 
 <div class="projects-details__container">
 	<div class="projects-details__title">
-		<h2>Project's location</h2>
+		<h2><i class="fas fa-square-full title-icon-size"></i> Project's location <i class="fas fa-square-full title-icon-size"></i></h2>
 	</div>
 	</div>
 
@@ -90,19 +101,34 @@
 		<div class="projects__row">
 			<div class="projects__main-col projects__name">
 				<div class="projects__img">
-			      <a href="../assets/images/h1.jpg" data-lightbox="mygallery"><img src="../assets/images/h1.jpg" alt=""></a>
+			      <a href="../assets/images/h2.jpg" data-lightbox="mygallery"><img src="../assets/images/h2.jpg" alt="" class="border-all">
+			       <div class="projects__middle border-all">
+  				</div>
+  				<div class="projects__middle-text">text</div>
+  			</a>
 			    </div>
 			</div>
 			<div class="projects__side-col projects__sm">
 				<div class="projects__side-img">
-			      <a href="../assets/images/h1.jpg" data-lightbox="mygallery"><img src="../assets/images/h1.jpg" alt=""></a>
+			      <a href="../assets/images/h3.jpg" data-lightbox="mygallery"><img src="../assets/images/h3.jpg" alt="" class="border-all"><div class="projects__middle border-all">
+  				</div>
+  				<div class="projects__middle-text">text</div>
+  			</a>
 			    </div>
 			    <div class="projects__side-img">
-			      <a href="../assets/images/h1.jpg" data-lightbox="mygallery"><img src="../assets/images/h1.jpg" alt=""></a>
+			      <a href="../assets/images/h4.jpg" data-lightbox="mygallery"><img src="../assets/images/h4.jpg" alt="" class="border-all"><div class="projects__middle border-all">
+  				</div>
+  				<div class="projects__middle-text">text</div>
+  			</a>
+			    </div>
+			     <div class="projects__side-img projects__all">
+			      <a href="../assets/images/h5.jpg" data-lightbox="mygallery"><img src="../assets/images/h5.jpg" alt="" class="border-all"></a>
+			      <div class="blur"></div>
+			     <a href="../assets/images/h6.jpg" data-lightbox="mygallery"><p>View All Photos (7)</p></a>
 			    </div>
 			</div>
 		</div>
-		<div class="projects__row projects__sm">
+		<!-- <div class="projects__row projects__sm">
 			<div class="projects__lists-col projects__name">
 				<div class="projects__img">
 			      <a href="../assets/images/h1.jpg" data-lightbox="mygallery"><img src="../assets/images/h1.jpg" alt=""></a>
@@ -119,14 +145,14 @@
 			    </div>
 			    <a href="../assets/images/h1.jpg" data-lightbox="mygallery"><p>View All Photos (7)</p></a>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 	<div class="projects__second-inner">
 		<div class="projects__row projects__form">
 			<form action="" method="POST">
 		<div class="projects__form-list">
-			<h1>Enquiry</h1>
+			<h1><i class="fas fa-square-full title-icon-size-md"></i>  Enquiry <i class="fas fa-square-full title-icon-size-md"></i> </h1>
 			<div class="projects-form__row">
 				<div class="projects-form__col">
 			<label for="propertyType">Property type</label>
@@ -145,7 +171,11 @@
 			<div class="projects-form__col">
 				<div class="txt_box">
 				<label for="budget">Budget S$</label>
-				 	<input type="number" name="budget" min="10000" max="1000000" step = "10000" placeholder="30000" >
+				 	<select name="budget" id="budget" required>
+					  <option value="10000-30000">10000 - 30000</option>
+					  <option value="30001-50000">30001 - 50000</option>
+					  <option value="above 50000">More than 50000</option>
+					</select>
 				</div>
 			</div>
 			<div class="projects-form__col">
@@ -243,17 +273,22 @@
 
 <div class="aboutus-container__inner">
 	<div class="projects-details__row">
-		<div class="projects-details__col">
+		<div class="projects-details__col projects-details__borderRight">
+			<div class="projects-details__infoTitle">
+					<h2><i class="fas fa-square-full title-icon-size-sm"></i> PROJECT INFO <i class="fas fa-square-full title-icon-size-sm"></i></h2>
+				</div>
+			<div class="projects-details__wrapper">
 			<div class="projects-details__header">
 					<h2>Property Type</h2>
 				</div>
 			<div class="projects-details__body">
 				<p>
-				Apartment
+				<img src="../assets/webicon/hdb1.png"><br>
+				HDB
 				</p>
 			</div>
 		</div>
-		<div class="projects-details__col">
+		<div class="projects-details__wrapper">
 			<div class="projects-details__header">
 					<h2>Property Status</h2>
 				</div>
@@ -263,7 +298,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="projects-details__col">
+		<div class="projects-details__wrapper">
 			<div class="projects-details__header">
 					<h2>Bedrooms</h2>
 				</div>
@@ -273,7 +308,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="projects-details__col">
+		<div class="projects-details__wrapper">
 			<div class="projects-details__header">
 					<h2>Interior Style</h2>
 				</div>
@@ -283,7 +318,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="projects-details__col">
+		<div class="projects-details__wrapper">
 			<div class="projects-details__header">
 					<h2>Size</h2>
 				</div>
@@ -293,7 +328,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="projects-details__col">
+		<div class="projects-details__wrapper">
 			<div class="projects-details__header">
 					<h2>Renovation Durations</h2>
 				</div>
@@ -303,43 +338,72 @@
 				</p>
 			</div>
 		</div>
-	</div>
-</div>
-
-<div class="projects-details__inner">
-	<div class="projects-work__header">
-					<h2>RENOVATIONS WORKS</h2>
-				</div>
-	<div class="projects-details__row">
+		</div>
+		
 		<div class="projects-details__col">
-			<div class="projects-details__header">
+			<div class="projects-details__infoTitle">
+					<h2><i class="fas fa-square-full title-icon-size-sm"></i> RENOVATIONS WORKS <i class="fas fa-square-full title-icon-size-sm"></i></h2>
+				</div>
+				<div class="projects-details__wrapper">
+			<div class="projects-details__header projects-work__row">
+				<div class="projects-work__col">
+				<img src="../assets/webicon/painting.png">
+			</div>
+			<div class="projects-work__col">
 				<h2>Painting</h2>
 			</div>
+			</div>
 		</div>
-		<div class="projects-details__col">
-			<div class="projects-details__header">
+		<div class="projects-details__wrapper">
+			<div class="projects-details__header projects-work__row">
+				<div class="projects-work__col">
+				<img src="../assets/webicon/hacking.png">
+			</div>
+			<div class="projects-work__col">
 				<h2>Hacking</h2>
 			</div>
 		</div>
-		<div class="projects-details__col">
-			<div class="projects-details__header">
+		</div>
+		<div class="projects-details__wrapper">
+			<div class="projects-details__header projects-work__row">
+				<div class="projects-work__col">
+				<img src="../assets/webicon/tiling.png">
+			</div>
+			<div class="projects-work__col">
 				<h2>Tiling</h2>
 			</div>
 		</div>
-		<div class="projects-details__col">
-			<div class="projects-details__header">
+		</div>
+		<div class="projects-details__wrapper">
+			<div class="projects-details__header projects-work__row">
+				<div class="projects-work__col">
+				<img src="../assets/webicon/carpentry.png">
+			</div>
+			<div class="projects-work__col">
 				<h2>Carpentry</h2>
 			</div>
 		</div>
-		<div class="projects-details__col">
-			<div class="projects-details__header">
+		</div>
+		<div class="projects-details__wrapper">
+			<div class="projects-details__header projects-work__row">
+				<div class="projects-work__col">
+				<img src="../assets/webicon/pluming.png">
+			</div>
+			<div class="projects-work__col">
 				<h2>Pluming</h2>
 			</div>
 		</div>
-		<div class="projects-details__col">
-			<div class="projects-details__header">
+		</div>
+		<div class="projects-details__wrapper">
+			<div class="projects-details__header projects-work__row">
+				<div class="projects-work__col">
+				<img src="../assets/webicon/electrical.png">
+			</div>
+			<div class="projects-work__col">
 				<h2>Electrical rewiring</h2>
 			</div>
+		</div>
+		</div>
 		</div>
 	</div>
 </div>
@@ -352,14 +416,14 @@
 <div class="reviews__container">
 	<div class="aboutus__inner">
 		<div class="reviews__header">
-			<h2>Reviews (13)</h2>
+			<h2><i class="fas fa-square-full title-icon-size-sm"></i> Reviews <i class="fas fa-square-full title-icon-size-sm"></i> <div class="review-sideLine"></div></h2>
 		</div>
 		<ul id="reviewLists">
 		<div class="reviews__lists">
 			<li>
 			<div class="review__header">
 				<h2>Project's name</h2>
-				<p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></p>
+				<p><i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="far fa-star"></i></p>
 				<p>Reviewed by Client's name ・ Project completed Feb 2020</p>
 			</div>
 			<div class="review__body">
@@ -372,7 +436,7 @@
 			<li>
 			<div class="review__header">
 				<h2>Project's name</h2>
-				<p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></p>
+				<p><i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="far fa-star"></i></p>
 				<p>Reviewed by Client's name ・ Project completed Feb 2020</p>
 			</div>
 			<div class="review__body">
@@ -385,7 +449,7 @@
 			<li>
 			<div class="review__header">
 				<h2>Project's name</h2>
-				<p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></p>
+				<p><i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="fas fa-star star"></i> <i class="far fa-star"></i></p>
 				<p>Reviewed by Client's name ・ Project completed Feb 2020</p>
 			</div>
 			<div class="review__body">
@@ -396,6 +460,18 @@
 	</ul>
 	<div id="reviewloadMore">Load more</div>
 	</div>
+</div>
+
+<!-- chat -->
+<div class="chat" id="chatmenu">
+	<div class="line1"></div>
+	<div class="line2"></div>
+	<div class="line3"></div>
+	<img src="../assets/webicon/chat.png" class="chatImg">
+</div>
+
+<div class="chatWhatsapp" id="chat__Whatsapp">
+	<a href="https://wa.me/6591727980"><i class="fab fa-whatsapp-square whatsapp"></i></a>
 </div>
 
 
@@ -410,8 +486,25 @@
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
 	</div>
 	<div class="footer__body">
-		<ul>
-			<li><p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p></li>
+		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p>
+		<ul class="footer-socials">
+			<li>
+				<a href="#">
+				<i class="fab fa-instagram-square instagram nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+				<i class="fab fa-facebook-square facebook nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+				<i class="fab fa-pinterest-square pinterest nav-icon-size"></i></a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-envelope-square envelope nav-icon-size"></i>
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>
