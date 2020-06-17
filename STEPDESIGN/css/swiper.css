@@ -1,3 +1,7 @@
+.swiper-container {
+  border-radius: 10px;
+}
+
 .swiper-container-main {
       width: 100%;
       height: 500px;
@@ -26,6 +30,7 @@
 
    .swiper-wrapper img {
 		width: 100%;
+    border-radius: 10px;
     }
 
 .swiper-button-next:after {

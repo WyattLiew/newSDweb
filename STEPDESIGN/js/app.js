@@ -15,10 +15,11 @@ navSlide();
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+  // if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos < "100") {
+    document.getElementById("navbar-socials").style.top = "14vh";
   } else {
-    document.getElementById("navbar").style.top = "-1150px";
+    document.getElementById("navbar-socials").style.top = "-1150px";
   }
   prevScrollpos = currentScrollPos;
 }

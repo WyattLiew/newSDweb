@@ -28,8 +28,13 @@
 }
 
 .nav-socials {
-    top: 3vh;
+    top: 3vh !important;
      right: 0px; 
+}
+
+.nav-socials-sideIcon,
+.nav-links-sideIcon {
+	display: none;
 }
 }
 
@@ -162,6 +167,7 @@
 .contacts-form-icon__col {
     flex: 50%;
     max-width: 50%;
+   justify-content: center;
 }
   }
 

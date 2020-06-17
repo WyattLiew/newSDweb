@@ -27,6 +27,8 @@ nav {
   font-family: "Raleway", sans-serif;
   width: 100%;
   padding-top: 15px;
+  padding-bottom: 15px;
+  background: white;
 }
 
 .logo {
@@ -35,8 +37,8 @@ nav {
 
 .logo img {
   position: absolute;
-  width: 120px;
-  top: -10px;
+  width: 55px;
+  top: -30px;
 }
 
 .nav-links {
@@ -58,6 +60,11 @@ nav {
 
 .nav-links-item-bg {
   background:  #02457A;
+  border-radius: 10px;
+}
+
+.nav-links-item-bg:hover {
+  background:  #2980b9;
 }
 
 .nav-item-text {
@@ -169,20 +176,24 @@ nav {
 }
 
 .facebook {
-  color:  #02457A;
+  color:  #3b5998;
 }
 
 .star {
 	color:  #02457A;
 }
 
+.priColor {
+	color:  #02457A;
+}
+
 .pinterest {
-  color:  #02457A;
+  color:  #c8232c;
 }
 
 .instagram {
-  color:  #02457A;
-  /*background: radial-gradient(
+  /*color:  #02457A;*/
+  background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
     #fdf497 5%,
@@ -192,15 +203,15 @@ nav {
   );
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;*/
+  -webkit-text-fill-color: transparent;
 }
 
 .envelope {
-  color:  #02457A;
+  color:   #00a2ed;
 }
 
 .whatsapp {
-  color:  #02457A;
+  color:  #25d366;
 }
 
 .nav-socials-sideIcon {
@@ -379,6 +390,7 @@ position: absolute;
 
 .aboutus__img img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .aboutus__row {
@@ -492,6 +504,7 @@ position: absolute;
 
 .teams-container img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .teams-container p {
@@ -529,6 +542,7 @@ position: absolute;
 
 .services__img img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .services-container__col p {
@@ -667,6 +681,7 @@ position: absolute;
 
 .content img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .content-header {
@@ -883,7 +898,6 @@ position: absolute;
   letter-spacing: 0.1em;
   color: #1c1b1d;
   padding: 20px;
-  text-transform: uppercase;
 }
 
 .contacts-container__col h1 {
@@ -975,6 +989,7 @@ position: absolute;
   cursor: pointer;
   transition: 0.5s;
   width: 100%;
+  border-radius: 10px;
 }
 .contact-form-btn:hover {
   background: #2980b9;
@@ -1069,6 +1084,7 @@ position: absolute;
 .testimonials {
   text-align: center;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .testimonials__img {
@@ -1077,6 +1093,7 @@ position: absolute;
 
 .testimonials__img img {
   width: 100%;
+  border-radius: 10px 10px 0 0 ;
 }
 
 .testimonials__text {
@@ -1308,6 +1325,7 @@ position: absolute;
 .projects__form {
   box-shadow: 1px 4px 5px 0px #ccc;
   padding: 10px 10px;
+  border-radius: 10px;
 }
 
 .projects__form-list h1 {
@@ -1370,6 +1388,7 @@ position: absolute;
   color: #1c1b1d;
   resize: none;
   height: 100px;
+  border-radius: 3px;
 }
 
 /* reviews */
@@ -1771,6 +1790,7 @@ footer {
 
 .quote-bg {
   background: #15131787;
+  clear: both;
 }
 
 .quote__header {
@@ -1823,7 +1843,7 @@ footer {
   text-align-last: center;
   width: 70%;
   box-sizing: border-box;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   border: 0;
   background: transparent;
   padding: 10px 10px;
@@ -1837,7 +1857,7 @@ footer {
   width: 50%;
 
   box-sizing: border-box;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
   border: 0;
   background: transparent;
   padding: 10px 10px;
@@ -1938,4 +1958,27 @@ html.is-leaving .transition-fade {
 
 .toggleWhatsapp i {
 	display: block;
+}
+
+
+.alert {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
