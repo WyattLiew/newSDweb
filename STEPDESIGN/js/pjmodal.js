@@ -64,21 +64,34 @@ $(function () {
     $('#reviewLists li').slice(0, 2).show();
     $('#reviewloadMore').on('click', function (e) {
         e.preventDefault();
-        x = x+1;
+        x = x+3;
         $('#reviewLists li').slice(0, x).slideDown();
         if($('#reviewLists li').length == x) {
             $('#reviewloadMore').hide();
         }
     });
 
-    y=4;
-    $('#projectLists__load li').slice(0, 4).show();
+    y=60;
+    $('#projectLists__load li').slice(0, 60).show();
     $('#projectloadMore').on('click', function (e) {
         e.preventDefault();
-        y = y+4;
+        y = y+20;
         $('#projectLists__load li').slice(0, y).slideDown();
         if($('#projectLists__load li').length == y) {
             $('#projectloadMore').hide();
         }
+        var projectSwiper = new Swiper('.swiper-container-projects', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
     });
 });

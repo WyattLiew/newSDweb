@@ -58,13 +58,26 @@ nav {
   color: #1c1b1d !important;
 }
 
-.nav-links-item-bg {
-  background:  #02457A;
-  border-radius: 10px;
+.nav-links-freeQuote a button:hover {
+  background:  #2980b9;
 }
 
-.nav-links-item-bg:hover {
-  background:  #2980b9;
+.nav-links-freeQuote {
+  list-style: none;
+}
+
+.nav-links-freeQuote a button {
+  color: white;
+  background:  #02457A;
+  border-radius: 10px;
+  border:none;
+  padding:10px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
 }
 
 .nav-item-text {
@@ -1611,6 +1624,10 @@ position: absolute;
   margin: auto;
   opacity: 0.5;
   padding: 20px 20px;
+}
+
+#reviews1__more,#reviews2__more {
+  display: none;
 }
 
 /* footer */

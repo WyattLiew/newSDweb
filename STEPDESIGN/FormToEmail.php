@@ -69,19 +69,25 @@ $phonenumber = $_POST['phonenumber'];
 $email_from = 'stepdbsg@gmail.com';
 $email_subject = "New Form submission from STEP DEZIGN website";
 $email_body = "You have received a new message from the client $name.\n".
-                            "Here is the message:\n $message.\n".
-                            "Information below:\n".
-                            "Email address: $visitor_email.\n".
-                            "phonenumber: $phonenumber.\n".
-                            "property type: $propertyType.\n".
-                            "property status: $propertyStatus.\n".
-                            "property style: $idStyle.\n".
-                            "budget S$: $budget.\n".
-                            "size: $size.\n".
-                            "loan required: $loanRequired.\n".
-                            "key collected: $keyCollected.\n".
-                            "keyPeriodMonth: $keyPeriodMonth.\n".
-                            "keyPeriodYear: $keyPeriodYear.\n";
+                            "\n\n".
+                            "Name:     $name\n\n".
+                            "Phone:    $phonenumber.\n\n".
+                            "Email:    $visitor_email.\n\n".
+                            "\n\n".
+                            "Budget:   $budget.\n\n".
+                            "Size:     $size.\n\n".
+                            "Property Type:     $propertyType.\n\n".
+                            "Property Status:   $propertyStatus.\n\n".
+                            "Property Style:    $idStyle.\n\n".
+                            "Loan Required:     $loanRequired.\n\n".
+                            "Key Collected:     $keyCollected.\n\n".
+                            "KeyPeriodMonth:    $keyPeriodMonth.\n\n".
+                            "KeyPeriodYear:     $keyPeriodYear.\n\n".
+                            "\n\n".
+                            "Remarks: \n".
+                            "\n $message \n".
+                            "\n\n";
+                            
 
 $headers = "From: $email_from \r\n";
 
