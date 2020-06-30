@@ -37,8 +37,8 @@ nav {
 
 .logo img {
   position: absolute;
-  width: 55px;
-  top: -30px;
+  width: 110px;
+  top: -35px;
 }
 
 .nav-links {
@@ -149,7 +149,7 @@ nav {
 .nav-socials {
   position: relative;
   top: 14vh;
-  right: 130px;
+  right: 95px;
 }
 
 .nav-socials li {
@@ -1031,6 +1031,7 @@ position: absolute;
   padding-bottom: 3px;
   color: #1c1b1d;
   text-align: center;
+  opacity: 0.4;
 }
 
 .contacts-form-icon__col [type="radio"] {
@@ -1048,6 +1049,7 @@ position: absolute;
 .contacts-form-icon__col [type="radio"] + img {
   cursor: pointer;
   width: 55px;
+  opacity: 0.4;
 }
 
 .contacts-form-icon__col [type="radio"] + img +img {
@@ -1058,6 +1060,7 @@ position: absolute;
 /* CHECKED STYLES */
 .contacts-form-icon__col [type="radio"]:checked + img +img + p {
   color:  #02457A;
+  opacity: 1;
 }
 
 #landed1,
@@ -1626,7 +1629,7 @@ position: absolute;
   padding: 20px 20px;
 }
 
-#reviews1__more,#reviews2__more {
+#reviews1__more,#reviews2__more,#reviews3__more {
   display: none;
 }
 
@@ -1665,6 +1668,11 @@ footer {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.3px;
+}
+
+.footer__header a {
+  text-decoration: none;
+  color:#1c1b1d;
 }
 
 .footer__body {
@@ -1724,7 +1732,7 @@ footer {
   width: 90%;
 }
 .modal-content-promotions {
-  background-color: #fff;
+  /*background-color: #fff;*/
   margin: auto;
   padding: 20px;
   width: 90%;
@@ -1741,7 +1749,7 @@ footer {
 
 .pj-close,
 .promotion-close {
-  color: #1c1b1d;
+  color: #fff;
   float: right;
   padding: 10px;
   font-size: 28px;
@@ -1780,7 +1788,7 @@ footer {
   text-align: center;
 }
 .promotion-modal__body img {
-  width: 50%;
+  width: 100%;
 }
 
 .promotion__timer h1 {

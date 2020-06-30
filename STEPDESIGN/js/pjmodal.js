@@ -66,7 +66,7 @@ $(function () {
         e.preventDefault();
         x = x+3;
         $('#reviewLists li').slice(0, x).slideDown();
-        if($('#reviewLists li').length == x) {
+        if($('#reviewLists li').length <= x) {
             $('#reviewloadMore').hide();
         }
     });
@@ -77,7 +77,7 @@ $(function () {
         e.preventDefault();
         y = y+20;
         $('#projectLists__load li').slice(0, y).slideDown();
-        if($('#projectLists__load li').length == y) {
+        if($('#projectLists__load li').length <= y) {
             $('#projectloadMore').hide();
         }
         var projectSwiper = new Swiper('.swiper-container-projects', {
