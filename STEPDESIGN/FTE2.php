@@ -12,7 +12,7 @@ $my_email = "stepdezign@stepdezign.com.sg";
 
 
 
-$continue = "/contacts.html";
+$continue = "/projects.html";
 
 
 
@@ -56,7 +56,6 @@ $message = $_POST['message'];
 
 $propertyType = $_POST['propertyType'];
 $propertyStatus = $_POST['propertyStatus'];
-$idStyle = $_POST['idStyle'];
 $budget = $_POST['budget'];
 $size = $_POST['size'];
 $loanRequired = $_POST['loanRequired'];
@@ -78,7 +77,6 @@ $email_body = "You have received a new message from the client $name.\n".
                             "Size M2:     $size.\n\n".
                             "Property Type:     $propertyType.\n\n".
                             "Property Status:   $propertyStatus.\n\n".
-                            "Property Style:    $idStyle.\n\n".
                             "Loan Required:     $loanRequired.\n\n".
                             "Key Collected:     $keyCollected.\n\n".
                             "Estimated Key Collection Month:    $keyPeriodMonth.\n\n".

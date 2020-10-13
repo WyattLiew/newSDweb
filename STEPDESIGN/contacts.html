@@ -8,6 +8,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173566173-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173566173-1');
+</script>
+
+
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -15,6 +26,30 @@
 
 </head>
 <body>
+		<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    xfbml            : true,
+    version          : 'v7.0'
+  });
+};
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="1962832490484446"
+  theme_color="#0084ff">
+</div>
 	<div class="main-nav" id="navbar">
 	<nav>
 		<div class="logo">
@@ -34,14 +69,14 @@
 				<a href="services.html">Services</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="projects.html">Projects</a>
+				<a href="project.html">Projects</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="promotions.html">Promotions</a>
+				<a href="promotion.html">Promotions</a>
 			</li>
-			<!-- <li class="nav-links-item">
-				<a href="blogs.html">Blog</a>
-			</li> -->
+			<li class="nav-links-item">
+				<a href="blog.html">Blog</a>
+			</li>
 			<li class="nav-links-item">
 				<a href="testimonials.html">Testimonials</a>
 			</li>
@@ -184,13 +219,13 @@
 			<select name="propertyStatus" id="propertyStatus">
 			 <option value="New">New</option>
 			  <option value="Resale">Resale</option>
-			  <option value="Exsiting">Exsiting</option>
+			  <option value="Existing">Existing</option>
 			</select>
 		</div>
 		<div class="contacts-form-ct__col">
 				<label for="idStyle">Interior style</label>
 			<select name="idStyle" id="idStyle">
-			 <option value="Mordern">Mordern</option>
+			 <option value="Modern">Modern</option>
 			  <option value="Contemporary">Contemporary</option>
 			  <option value="Minimalistic">Minimalistic</option>
 			  <option value="Industrial">Industrial</option>
@@ -223,15 +258,15 @@
 				<div class="contacts-form-ct__col">
 			<label for="loanRequired">Loan Required</label>
 			<select name="loanRequired" id="loanRequired">
-			  <option value="yes">Yes</option>
-			  <option value="no">No</option>
+			  <option value="Yes">Yes</option>
+			  <option value="No">No</option>
 			</select>
 		</div>
 		<div class="contacts-form-ct__col">
 			<label for="keyCollected">Key Collected</label>
 			<select name="keyCollected" id="keyCollected">
-			   <option value="yes">Yes</option>
-			  <option value="no">No</option>
+			   <option value="Yes">Yes</option>
+			  <option value="No">No</option>
 			</select>
 		</div>
 		</div>
@@ -241,10 +276,10 @@
 				<div class="contacts-form-ct__col">
 			<select name="keyPeriodMonth" id="keyPeriod">
 				<option value="-">Month</option>
-			  <option value="janMar">Jan - Mar</option>
-			  <option value="aprJun">Apr - Jun</option>
-			   <option value="julSep">Jul - Sep</option>
-			  <option value="octDec">Oct - Dec</option>
+			  <option value="Jan - Mar">Jan - Mar</option>
+			  <option value="Apr - Jun">Apr - Jun</option>
+			   <option value="Jul - Sep">Jul - Sep</option>
+			  <option value="Oct - Dec">Oct - Dec</option>
 			</select>
 		</div>
 			<div class="contacts-form-ct__col">
@@ -252,6 +287,7 @@
 				<option value="-">Year</option>
 			   <option value="2020">2020</option>
 			  <option value="2021">2021</option>
+			  <option value="2022">2022</option>
 			</select>
 		</div>
 		</div>
@@ -276,14 +312,14 @@
 				</div>
 			</div>
 		</div>
-				<div class="txt_box">
+				<div class="txt_box txt_box-message">
 				<!-- <label>Message :</label> -->
 				 <textarea maxlength="150" name="message" id="message" placeholder="Enter your message"></textarea>
 				</div>
 		 		<input type="submit" value="Send" class="contact-form-btn">
 			</div>
 		</form>
-		<p class="text-pg-top">We will be contact you as soon as possible!</p>
+		<p class="text-pg-top">We will contact you as soon as possible!</p>
 		<p>Thank you for your interest in STEP DEZIGN PTE LTD.</p>
 	</div>
 			
@@ -304,7 +340,7 @@
 	<span class="promotion-close">&times;</span>
 	<div class="promotion-modal__body">
     <img src="assets/images/promotions/tv 2.jpg">
-	<div class="promotion__timer" id="promotion__timer">
+	<!-- <div class="promotion__timer" id="promotion__timer">
   		<h1>Dont's miss out</h1>
   <ul>
     <li><span id="days"></span>days</li>
@@ -312,22 +348,11 @@
     <li><span id="minutes"></span>Minutes</li>
     <li><span id="seconds"></span>Seconds</li>
   </ul>
-</div>
+</div> -->
 	</div>
   </div>
 </div>
 
-<!-- chat -->
-<div class="chat" id="chatmenu">
-	<div class="line1"></div>
-	<div class="line2"></div>
-	<div class="line3"></div>
-	<img src="assets/webicon/chat.png" class="chatImg">
-</div>
-
-<div class="chatWhatsapp" id="chat__Whatsapp">
-	<a href="https://wa.me/6591727980"><i class="fab fa-whatsapp-square whatsapp"></i></a>
-</div>
 
 <footer>
 	<hr>
@@ -340,7 +365,7 @@
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
 	</div>
 	<div class="footer__body">
-		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p>
+		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved &middot; <a href="privacy.html">Privacy Policy</a></p>
 		<ul class="footer-socials">
 			<li>
 				<a href="https://www.instagram.com/stepdezign" target="_blank">
@@ -384,36 +409,38 @@ window.onclick = function(event) {
   }
 }
 
-// Set the date we're counting down to
-var countDownDate = new Date("jun 30, 2020 20:37:25").getTime();
+// // Set the date we're counting down to
+// var countDownDate = new Date("july 30, 2020 20:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+// // Update the count down every 1 second
+// var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
+// //   // Get today's date and time
+//   var now = new Date().getTime();
+//   console.log(now)
     
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+//   // Find the distance between now and the count down date
+//   var distance = countDownDate - now;
     
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//   // Time calculations for days, hours, minutes and seconds
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
-  document.getElementById('days').innerText = days,
-  document.getElementById('hours').innerText = hours,
-  document.getElementById('minutes').innerText = minutes,
-  document.getElementById('seconds').innerText = seconds;
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    clearTimeout(x);
-    document.getElementById("promotion__timer").innerHTML = "EXPIRED";
-  }
-}, 1000);
+//   // Output the result in an element with id="demo"
+//   document.getElementById('days').innerText = days,
+//   document.getElementById('hours').innerText = hours,
+//   document.getElementById('minutes').innerText = minutes,
+//   document.getElementById('seconds').innerText = seconds;
+//   // If the count down is over, write some text 
+//   if (distance < 0) {
+//     clearInterval(x);
+//     clearTimeout(x);
+//     document.getElementById("promotion__timer").innerHTML = "EXPIRED";
+//   }
+// }, 1000);
+
 </script>
 
 

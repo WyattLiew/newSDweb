@@ -8,6 +8,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173566173-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173566173-1');
+</script>
+
 
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
@@ -16,6 +27,30 @@
 
 </head>
 <body>
+		<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    xfbml            : true,
+    version          : 'v7.0'
+  });
+};
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="1962832490484446"
+  theme_color="#0084ff">
+</div>
 	<div class="main-nav" id="navbar">
 	<nav>
 		<div class="logo">
@@ -35,13 +70,13 @@
 				<a href="services.html">Services</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="projects.html">Projects</a>
+				<a href="project.html">Projects</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="promotions.html">Promotions</a>
+				<a href="promotion.html">Promotions</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="blogs.html">Blog</a>
+				<a href="blog.html">Blog</a>
 			</li>
 			<li class="nav-links-item nav-item-active">
 				<a href="testimonials.html">Testimonials</a>
@@ -92,7 +127,7 @@
 				<li>
 				<div class="testimonials">
 					<div class="testimonials__img">
-						<img src="assets/projects/CompassvaleBow/Artboard 1.JPG">
+						<img src="assets/projects/CompassvaleBow/Artboard 1.jpg">
 					</div>
 				<div class="testimonials__text">
 				<p>
@@ -109,7 +144,7 @@
 				<li>
 				<div class="testimonials">
 					<div class="testimonials__img">
-						<img src="assets/projects/SumangLane/Artboard 1.JPG">
+						<img src="assets/projects/SumangLane/Artboard 1.jpg">
 					</div>
 				<div class="testimonials__text">
 				<p>
@@ -126,7 +161,7 @@
 				<li>
 				<div class="testimonials">
 					<div class="testimonials__img">
-						<img src="assets/projects/TheTerrace/Artboard 7.JPG">
+						<img src="assets/projects/TheTerrace/Artboard 7.jpg">
 					</div>
 				<div class="testimonials__text">
 				<p>
@@ -143,7 +178,7 @@
 				<li>
 				<div class="testimonials">
 					<div class="testimonials__img">
-						<img src="assets/projects/EdgedalePlains/Artboard 1.JPG">
+						<img src="assets/projects/EdgedalePlains/Artboard 1.jpg">
 					</div>
 				<div class="testimonials__text">
 				<p>
@@ -160,16 +195,16 @@
 				<li>
 				<div class="testimonials">
 					<div class="testimonials__img">
-						<img src="assets/projects/BuangkokLink/Artboard 5.JPG">
+						<img src="assets/projects/BuangkokLink/Artboard 5.jpg">
 					</div>
 				<div class="testimonials__text">
 				<p>
 				When it comes to spending, especially when it involves substantial amount of money, I am particularly stringent about it. We shortlisted a handful of IDs by filtering the reviews and ratings using the Qanvast app which was very useful and efficient.
 				An appointment was set and we met Victor on the 24 Feb (Sat) at 1130 hrs. Upon reaching his office, we were promptly greeted by his smile. Our similar age group, his bubbly personality and same lingo connected Victor and us seamlessly. To be honest, my wife is a very shy person but Victor made her less reserved and she was also able to discuss with him about her ideas on the kitchen layout and etc.
 				Victor had already printed our HDB layout plan well before we came. Before we proceeded to discuss, he asked us what we wanted to drink as it was really<span id="reviews1__dots">...</span><span id="reviews1__more"> a hot day. He gave us the drinks from the fridge before we started the discussion which was a nice gesture.
-				Victor is in fact a very good listener, attentive to small details and what we like about him is his candidness (i.e. frankness). He would listen to all our crazy ideas and would point out the peculiarities and concerns that he had. He would also tell us if an idea was practical as we itinerated that we wanted a simple and airy home that doesn’t have any platforms/spaces that could easily trap dust.
-				After the fruitful discussion which lasted for 1.5 hrs, we insisted on a verbal quotation and was verbally quoted an X figure amount. This amount didn’t flinch much from the final quotation when we received it - which was great! Victor sent us the furnished quotation in a few days’ time for our perusal. There were minimal mistakes in it and we were glad that it conform within our initial budget.
-				As we were in the midst of comparing with other IDs that we chose initially, we found that not only did the quotation by Victor suited our budget, we found that we could communicate with him better as he wasn’t as imposing unlike the other IDS and as I have mentioned previously, he isn’t pushy and a very good listener.
+				Victor is in fact a very good listener, attentive to small details and what we like about him is his candidness (i.e. frankness). He would listen to all our crazy ideas and would point out the peculiarities and concerns that he had. He would also tell us if an idea was practical as we itinerated that we wanted a simple and airy home that doesn't have any platforms/spaces that could easily trap dust.
+				After the fruitful discussion which lasted for 1.5 hrs, we insisted on a verbal quotation and was verbally quoted an X figure amount. This amount didn't flinch much from the final quotation when we received it - which was great! Victor sent us the furnished quotation in a few days' time for our perusal. There were minimal mistakes in it and we were glad that it conform within our initial budget.
+				As we were in the midst of comparing with other IDs that we chose initially, we found that not only did the quotation by Victor suited our budget, we found that we could communicate with him better as he wasn't as imposing unlike the other IDS and as I have mentioned previously, he isn't pushy and a very good listener.
 				Fast forward to Nov 2018, we finally moved into our new HDB flat. Thank God, whatever that we have envisioned of a simple and airy home came to fruition! Although the final renovation cost was a little bit higher (partly due to our fault as we requested for additional items), we were blessed to have Victor as our ID.
 				Thank you Victor for making our dream home a reality! :)</span>
 			<button onclick="myFunction(1)" id="reviews1__btn">Read more</button></p>
@@ -184,7 +219,7 @@
 				<li>
 				<div class="testimonials">
 					<div class="testimonials__img">
-						<img src="assets/projects/BedokNorthStreet2/Artboard 1.JPG">
+						<img src="assets/projects/BedokNorthStreet2/Artboard 1.jpg">
 					</div>
 				<div class="testimonials__text">
 				<p>
@@ -200,7 +235,7 @@
 				<li>
 				<div class="testimonials">
 					<div class="testimonials__img">
-						<img src="assets/projects/TanameraCrest/Artboard 1.JPG">
+						<img src="assets/projects/TanameraCrest/Artboard 1.jpg">
 					</div>
 				<div class="testimonials__text">
 				<p>
@@ -218,11 +253,11 @@
 				<li>
 				<div class="testimonials">
 					<div class="testimonials__img">
-						<img src="assets/projects/solAcres/Artboard 1.JPG">
+						<img src="assets/projects/SolAcres/Artboard 1.jpg">
 					</div>
 				<div class="testimonials__text">
 				<p>
-				Victor is patient throughout the entire project, even though we gave him very challenging requirements. He is also a good listener who makes sure the owners’ ideas and opinions are heard and taken into considerations. That said, he does not blindly follow all of them, and will not hesitate to propose alternatives which can cater to individual’s needs, from cost-savings solutions to very unique ideas. Worksmanship<span id="reviews3__dots">...</span><span id="reviews3__more"> is generally good, hence there were minimal rectification works required after handing over. Victor’s problem solving skills are really commendable, even when we intercept halfway during the project with new ideas or change of plans. Although there were some delays in the timeline which we thought is typically unavoidable, we would still strongly recommend Step Dezign Pte Ltd to work on your dream home!</span><button onclick="myFunction(3)" id="reviews3__btn">Read more</button></p>
+				Victor is patient throughout the entire project, even though we gave him very challenging requirements. He is also a good listener who makes sure the owners' ideas and opinions are heard and taken into considerations. That said, he does not blindly follow all of them, and will not hesitate to propose alternatives which can cater to individual's needs, from cost-savings solutions to very unique ideas. Worksmanship<span id="reviews3__dots">...</span><span id="reviews3__more"> is generally good, hence there were minimal rectification works required after handing over. Victor's problem solving skills are really commendable, even when we intercept halfway during the project with new ideas or change of plans. Although there were some delays in the timeline which we thought is typically unavoidable, we would still strongly recommend Step Dezign Pte Ltd to work on your dream home!</span><button onclick="myFunction(3)" id="reviews3__btn">Read more</button></p>
 				<p>- Reviewed by Ng Wei Qi</p>
 				<p>5 / 5 <i class="fas fa-star star"></i></p>
 				</div>
@@ -238,18 +273,6 @@
 	</div>
 </div>
 
-<!-- chat -->
-<div class="chat" id="chatmenu">
-	<div class="line1"></div>
-	<div class="line2"></div>
-	<div class="line3"></div>
-	<img src="assets/webicon/chat.png" class="chatImg">
-</div>
-
-<div class="chatWhatsapp" id="chat__Whatsapp">
-	<a href="https://wa.me/6591727980"><i class="fab fa-whatsapp-square whatsapp"></i></a>
-</div>
-
 <footer>
 	<hr>
 	<div class="footer__inner">
@@ -261,7 +284,7 @@
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
 	</div>
 	<div class="footer__body">
-		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p>
+		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved &middot; <a href="privacy.html">Privacy Policy</a></p>
 		<ul class="footer-socials">
 			<li>
 				<a href="https://www.instagram.com/stepdezign" target="_blank">

@@ -8,6 +8,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173566173-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173566173-1');
+</script>
+
+
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -15,6 +26,30 @@
 
 </head>
 <body>
+		<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    xfbml            : true,
+    version          : 'v7.0'
+  });
+};
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="1962832490484446"
+  theme_color="#0084ff">
+</div>
 	<div class="main-nav" id="navbar">
 	<nav>
 		<div class="logo">
@@ -34,14 +69,14 @@
 				<a href="services.html">Services</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="projects.html">Projects</a>
+				<a href="project.html">Projects</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="promotions.html">Promotions</a>
+				<a href="promotion.html">Promotions</a>
 			</li>
-			<!-- <li class="nav-links-item">
-				<a href="blogs.html">Blog</a>
-			</li> -->
+			<li class="nav-links-item">
+				<a href="blog.html">Blog</a>
+			</li>
 			<li class="nav-links-item">
 				<a href="testimonials.html">Testimonials</a>
 			</li>
@@ -93,14 +128,14 @@
 			<div class="aboutus-container__col aboutus__flt-text">
 				<h2>OUR PHILOSOPHY</h2>
 				<p>Step Dezign is a multidisciplinary firm, focused on interior design, lighting design and planning.</p>
-				<p>We are a team of professional, energetic individual’s with talented designers and experienced managers available to guide our client’s through the flawless and timely execution of any residential design project.</p>
+				<p>We are a team of professional, energetic individual's with talented designers and experienced managers available to guide our client's through the flawless and timely execution of any residential design project.</p>
 				<p>We manipulate forms and combinations from our everyday world to create an aesthetic, practical, and sustainable atmosphere that transforms a simple building or space into a place of happiness for you and your guests.</p>
 			</div>
 			<div class="aboutus-container__col">
 				<h2>OUR STORY</h2>
 				<p>Step Dezign PTE LTD was established in 2019 after assembling works over the years with designers and commercial builders in Singapore. We are here to provide our expertise to those who are in need of design sense.</p>
 				<p>Design consult is the basis of what we do, with flexibility to move beyond.</p>
-				<p>We believe a successful interior combines both form and function and is in alignment with the client’s aesthetic, lifestyle and budget. It is therefore important each of our designers has the right kind of experience.</p>
+				<p>We believe a successful interior combines both form and function and is in alignment with the client's aesthetic, lifestyle and budget. It is therefore important each of our designers has the right kind of experience.</p>
 			</div>
 		</div>
 	</div>
@@ -135,19 +170,6 @@
 		</div>
 	</div>
 </div> -->
-
-<!-- chat -->
-<div class="chat" id="chatmenu">
-	<div class="line1"></div>
-	<div class="line2"></div>
-	<div class="line3"></div>
-	<img src="assets/webicon/chat.png" class="chatImg">
-</div>
-
-<div class="chatWhatsapp" id="chat__Whatsapp">
-	<a href="https://wa.me/6591727980"><i class="fab fa-whatsapp-square whatsapp"></i></a>
-</div>
-
 <footer>
 	<hr>
 	<div class="footer__inner">
@@ -159,7 +181,7 @@
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
 	</div>
 	<div class="footer__body">
-		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved</p>
+		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved &middot; <a href="privacy.html">Privacy Policy</a></p>
 		<ul class="footer-socials">
 			<li>
 				<a href="https://www.instagram.com/stepdezign" target="_blank">

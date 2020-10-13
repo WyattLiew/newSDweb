@@ -7,8 +7,7 @@
 	
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173566173-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -18,11 +17,15 @@
   gtag('config', 'UA-173566173-1');
 </script>
 
-
-	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
+	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.css">
+	<script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+	<script defer src="../js/swup.js"></script> 
 
 </head>
 <body>
@@ -53,7 +56,7 @@ window.fbAsyncInit = function() {
 	<div class="main-nav" id="navbar">
 	<nav>
 		<div class="logo">
-			<a href="index.html"><img src="assets/logo/SDLOGO.png"></a>
+			<a href="../index"><img src="../assets/logo/SDLOGO.png"></a>
 		</div>
 		<ul class="nav-links">
 			<li class="nav-links-item">
@@ -63,28 +66,28 @@ window.fbAsyncInit = function() {
 			</div>
 			</li>
 			<li class="nav-links-item">
-				<a href="aboutus.html">About Us</a>
+				<a href="../aboutus">About Us</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="services.html">Services</a>
+				<a href="../services">Services</a>
 			</li>
 			<li class="nav-links-item">
-				<a href="project.html">Projects</a>
-			</li>
-			<li class="nav-links-item">
-				<a href="promotion.html">Promotions</a>
-			</li>
-			<li class="nav-links-item">
-				<a href="blog.html">Blog</a>
-			</li>
-			<li class="nav-links-item">
-				<a href="testimonials.html">Testimonials</a>
+				<a href="../project">Projects</a>
 			</li>
 			<li class="nav-links-item nav-item-active">
-				<a href="career.html">Career</a>
+				<a href="../promotion">Promotions</a>
+			</li>
+			<li class="nav-links-item">
+				<a href="blog">Blog</a>
+			</li>
+			<li class="nav-links-item">
+				<a href="../testimonials">Testimonials</a>
+			</li>
+			<li class="nav-links-item">
+				<a href="../career">Career</a>
 			</li>
 			<li class="nav-links-freeQuote">
-				<a href="contacts.html" class="nav-item-text"><button>Free Quote</button></a>
+				<a href="../contacts" class="nav-item-text"><button>Free Quote</button></a>
 			</li>
 			<ul class="nav-socials" id="navbar-socials">
 				<li>
@@ -115,50 +118,28 @@ window.fbAsyncInit = function() {
 	</nav>
 </div>
 
+<main id="swup" class="transition-fade">
 <div class="aboutus__container pg-top pg-btm">
 	<div class="aboutus__header">
-		<h2><i class="fas fa-square-full title-icon-size priColor"></i> Career <i class="fas fa-square-full title-icon-size priColor"></i></h2>
+		<h2><i class="fas fa-square-full title-icon-size priColor"></i> Promotions <i class="fas fa-square-full title-icon-size priColor"></i></h2>
 	</div>
-	 <div class="aboutus-container__inner">
-		<div class="aboutus-container__row">
-			<div class="career-container__col">
-				<h2>Interior Designer - sales</h2>
-				<h3>Job Description :</h3>
-				<ul>
-					<li>
-						To meet potential clients to discuss their requirements and propose designs
-					</li>
-					<li>
-						Draft quotations and costing estimates
-					</li>
-					<li>
-						Project execution & management with contractors and suppliers
-					</li>
-					<li>
-						Site Coordination
-					</li>
-				</ul>
-				<h3>Requirements :</h3>
-				<ul>
-					<li>
-						Self-motivated, hardworking and creatively
-					</li>
-					<li>
-						Must be able to work under minimal supervision
-					</li>
-					<li>
-						Preferably with relevant experience
-					</li>
-				</ul>
-			</div>
-			<div class="career-container__col career-header">
-				<h2>Join us!</h2>
-				<p>We have several openings and are always interested to see the work of talented designers. You are welcome to submit your resume and portfolio for our file via <a href="#">stepdezign@stepdezign.com.sg</a></p>
-				<p>Thank you for your interest in STEP DEZIGN PTE LTD.</p>
-			</div>
-			
-		</div>
-	</div>
+    <div class="aboutus__img">
+      <div><img src="../assets/images/promotions/standard.png"></div>
+    </div>
+</div>
+</main>
+
+  <!-- Swiper   -->
+<div class="promotions__inner">
+  <div class="swiper-container swiper-container-promotions">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide-promotions"><div class="promotions__img"><a href="/promotions/package1"><img src="../assets/images/promotions/Premium.png"></a></div></div>
+    </div>
+   
+    <div class="swiper-pagination"></div>
+     <div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+  </div>
 </div>
 
 
@@ -166,14 +147,14 @@ window.fbAsyncInit = function() {
 	<hr>
 	<div class="footer__inner">
 	<div class="footer__header footer-float-left">
-		<a href="contacts.html">
+		<a href="contacts">
 		<h2>GET FREE QUOTES!</h2></a>
 	</div>
 	<div class="footer__header footer-float-right">
 		<p>2 Yishun Industrial Street 1 #07-27 Northpoint Bizhub Singapore 768159</p>
 	</div>
 	<div class="footer__body">
-		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved &middot; <a href="privacy.html">Privacy Policy</a></p>
+		<p>&copy; 2020 Step Dezign Pte. Ltd. All Rights Reserved &middot; <a href="privacy">Privacy Policy</a></p>
 		<ul class="footer-socials">
 			<li>
 				<a href="https://www.instagram.com/stepdezign" target="_blank">
@@ -194,7 +175,39 @@ window.fbAsyncInit = function() {
 	<hr>
 </footer>
 
-<script type="text/javascript" src="js/app.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+ <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }
+    });
+  </script>
 
 </body>
 </html>

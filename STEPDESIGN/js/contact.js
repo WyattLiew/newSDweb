@@ -4,7 +4,7 @@
 	
 
 	key.onchange = function() {
-  if (key.value == "no") {
+  if (key.value == "no" || key.value == "No") {
 		iskeyCollected.style.display = "flex";
 	}
 	else{

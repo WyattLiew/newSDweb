@@ -73,6 +73,9 @@ $(function () {
 
     y=60;
     $('#projectLists__load li').slice(0, 60).show();
+    if($('#projectLists__load li').length <= y) {
+            $('#projectloadMore').hide();
+        }
     $('#projectloadMore').on('click', function (e) {
         e.preventDefault();
         y = y+20;
